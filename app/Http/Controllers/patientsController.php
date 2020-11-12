@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\patients;
+use App\visits;
+use App\appointments;
 use Illuminate\Http\Request;
 use App\Http\Resources\patientsResource;
 

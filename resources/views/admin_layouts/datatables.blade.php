@@ -1,8 +1,4 @@
 
-<link href="{{asset('css/select2.css')}}" rel="stylesheet" />
-<link href="{{asset('css/style.datatables.css')}}" rel="stylesheet">
-<link href="{{asset('cdn.datatables.net/responsive/1.0.1/css/dataTables.responsive.css')}}" rel="stylesheet">
-
 @if(request()->route()->getName() == 'Patients Details')
 <div class="panel ">
 
@@ -64,6 +60,7 @@
             <table  class="table table-striped table-bordered">
                 <thead>
                     <tr>
+                        <th>No</th>
                         <th>Patient Number</th>
                         <th>Doctor Number</th>
                         <th>Appointment Date</th>
@@ -74,8 +71,9 @@
                 </thead>
                 
                 <tbody>
-                @foreach($appointments as $appointments)
+                @foreach($appointments as $id=>$appointments)
                     <tr>
+                        <td>{{ $id +1}}</td>
                         <td>{{$appointments->patient_id}}</td>   
                         <td>{{$appointments->medical_practitioner_id}}</td>  
                         <td>{{$appointments->appointment_date}}</td>  
@@ -105,6 +103,7 @@
             <table id="shTable" class="table table-striped table-bordered">
                 <thead class="">
                     <tr>
+                        <th>No</th>    
                         <th>Patient Number</th>
                         <th>Visit Date</th>
                         <th>Visit Category</th>
@@ -114,8 +113,9 @@
                 </thead>
 
                 <tbody>
-                @foreach($visits as $visits)
+                @foreach($visits as $id=>$visits)
                     <tr>
+                        <td>{{ $id +1}}</td>
                         <td>{{$visits->patient_id}}</td>   
                         <td>{{$visits->visit_date}}</td>  
                         <td>{{$visits->visit_category}}<td>   

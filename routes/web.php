@@ -2,16 +2,20 @@
 
 use App\patients;
 use App\visits;
+use App\appointments;
 use Illuminate\Support\Facades\Route;
 
 
 Route::get('/',function(){ return view('welcome');});
 Route::group(['middleware' => ['auth']], function () {
-Route::get('/dashboard', function () {
-    $count_patients = patients::count();
-    $count_visits = visits::count();
-    return view('admin_pages',compact('count_patients','count_visits'));
-});
+Route::get('/dashboard', 'dashboardController@getDashboard');
+Route::get('/get-graphs', 'dashboardController@getGraphs');
+Route::get('/get-piechart', 'dashboardController@getPieChart');
+    //how to pass data to the the API
+    // $arr = [$count_patients, $count_visits, $count_appointments];
+    // return response()->json($arr);
+
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/create-patients','patientsController@validatePatient');

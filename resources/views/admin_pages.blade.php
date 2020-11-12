@@ -2,7 +2,17 @@
 <html lang="en">
     
 <!-- Mirrored from themetrace.com/demo/chain/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Mar 2020 04:30:31 GMT -->
-@include('admin_layouts.styling')
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>DR.JEBT</title>
+    @yield('page_css')
+    @include('admin_layouts.styling')
+</head>
+
 
     <body>
         
@@ -16,11 +26,11 @@
                     
                     
                     <div class="contentpanel">
-                        
-                    @include('admin_layouts.cards')
+                        @yield('main_content')
 
-                    @include('admin_layouts.graphs')
-                        
+                    </div>   
+                </div>   
+            </div>   
                        
 
 
@@ -28,6 +38,7 @@
 
 
         @include('admin_layouts.javascript')
+        @yield('page_js')
     </body>
 
 <!-- Mirrored from themetrace.com/demo/chain/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 28 Mar 2020 04:30:31 GMT -->

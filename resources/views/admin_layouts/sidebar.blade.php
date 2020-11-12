@@ -11,7 +11,7 @@
                     
                     <h5 class="leftpanel-title">Navigation</h5>
                     <ul class="nav nav-pills nav-stacked">
-                        <li class="parent" ><a href="/dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                        <li class="" ><a href="/dashboard"><i class="fa fa-home"></i> <span>Dashboard</span></a>
                        
                         </li>
                         <li class="parent"><a href="#"><i class="fa fa-suitcase"></i> <span>Patients</span></a>
@@ -32,9 +32,12 @@
                                 <li @if(request()->route()->getName()== 'Appointment Details') class="active" @endif><a href="/get-appointments">Appointment Records</a></li>
                             </ul>
                         </li>
+                       
                         <li ><a href="/get-create-clinic-findings-form"><i class="fa fa-file-text"></i> <span>Clinical Findings</span></a>
                             
                         </li>
+                       
+                       
                         
                     </ul>
                     

@@ -13,14 +13,7 @@
                                         </div><!-- media-body -->
                                         <hr>
                                         <div class="clearfix mt20">
-                                            <div class="pull-left">
-                                                <h5 class="md-title nomargin">Yesterday</h5>
-                                                <h4 class="nomargin">10</h4>
-                                            </div>
-                                            <div class="pull-right">
-                                                <h5 class="md-title nomargin">This Week</h5>
-                                                <h4 class="nomargin">50</h4>
-                                            </div>
+                                            
                                         </div>
                                         
                                     </div><!-- panel-body -->
@@ -40,14 +33,7 @@
                                         </div><!-- media-body -->
                                         <hr>
                                         <div class="clearfix mt20">
-                                            <div class="pull-left">
-                                                <h5 class="md-title nomargin">Yesterday</h5>
-                                                <h4 class="nomargin">10</h4>
-                                            </div>
-                                            <div class="pull-right">
-                                                <h5 class="md-title nomargin">This Week</h5>
-                                                <h4 class="nomargin">29</h4>
-                                            </div>
+                                            
                                         </div>
                                         
                                     </div><!-- panel-body -->
@@ -63,18 +49,11 @@
                                         <div class="panel-icon"><i class="fa fa-pencil"></i></div>
                                         <div class="media-body">
                                             <h5 class="md-title nomargin">Total Appointments</h5>
-                                            <h1 class="mt5">60</h1>
+                                            <h1 class="mt5">{{ $count_visits }}</h1>
                                         </div><!-- media-body -->
                                         <hr>
                                         <div class="clearfix mt20">
-                                            <div class="pull-left">
-                                                <h5 class="md-title nomargin">Yesterday</h5>
-                                                <h4 class="nomargin">10</h4>
-                                            </div>
-                                            <div class="pull-right">
-                                                <h5 class="md-title nomargin">This Week</h5>
-                                                <h4 class="nomargin">40</h4>
-                                            </div>
+                                            
                                         </div>
                                         
                                     </div><!-- panel-body -->
