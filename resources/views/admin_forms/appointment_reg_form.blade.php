@@ -20,7 +20,9 @@
             <div class= "form-group">
                 <label class="col-sm-4 control-label">Medical Practitioner ID:<span class="asterisk">*</span></label>
                 <div class="form-group">
-                    <input type="text" name="medical_practitioner_id" class="form-control" title="Field is required!" />
+                <select id="select-search-hide" name="medical_practitioner_id" title="Field is required!" data-placeholder="Choose One" class="width300">
+                    <option value="{{id}}">{{}}</option>
+                    
                 </div>
             </div><!-- form-group -->
             <div class="form-group">
