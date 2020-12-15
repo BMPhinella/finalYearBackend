@@ -8,6 +8,7 @@ use App\appointments;
 use Illuminate\Http\Request;
 use App\Http\Resources\patientsResource;
 
+
 class patientsController extends Controller
 {
     public function __construct(){
